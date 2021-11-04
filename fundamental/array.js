@@ -14,4 +14,19 @@ var position = friendsAge.indexOf(24);
 console.log(friendsAge);
 console.log(position);
 
+// array advanced
+
+friendsAge.push(20);
+friendsAge.push(30);
+var totalFriends = friendsAge.length;
+
+console.log(friendsAge);
+console.log(totalFriends);
+
+friendsAge.pop();
+console.log(friendsAge);
+
+friendsAge.shift();
+console.log(friendsAge);
+
 // end code
