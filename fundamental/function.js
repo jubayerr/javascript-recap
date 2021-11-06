@@ -9,7 +9,7 @@ function sayHello(n, c) {
     greet.push(`Good Morning, ${c}!`);
   }
 
-  return greet[0];
+  return greet.join("\n");
 }
 
 var greetBangladesh = sayHello(number, country);
