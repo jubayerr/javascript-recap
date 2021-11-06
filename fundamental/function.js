@@ -1,13 +1,15 @@
-// function is JS
+// function in JS
 
 var number = 5;
 var country = "Bangladesh";
 
 function sayHello(n, c) {
+  var greet = [];
   for (let i = 0; i < n; i++) {
-    var greeting = `Good Morning, ${c}!`;
-    return greeting;
+    greet.push(`Good Morning, ${c}!`);
   }
+
+  return greet[0];
 }
 
 var greetBangladesh = sayHello(number, country);
