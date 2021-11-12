@@ -1,21 +1,15 @@
 // calculate factorial of a number
 
-function factorial(n) {
-  var answer = 1;
-  if (n == 0 || n == 1) {
-    answer = 1;
-  } else {
-    for (var i = n; i >= 1; i--) {
-      answer = answer * i;
-    }
-    return answer;
+function getFactorial(n) {
+  var factorial = 1;
+
+  for (var i = 1; i <= n; i++) {
+    factorial = factorial * i;
   }
+  return factorial;
 }
 
-var num = 10;
-
-var result = factorial(num);
-
-console.log(`The factorial of ${num} is ${result}`);
+var result = getFactorial(10);
+console.log(result);
 
 //  end code
