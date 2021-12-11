@@ -1,13 +1,13 @@
-var myName = "Jubayer";
-var myAge = 24;
+// check leap year
 
-var profile = `My name is ${myName} and I am ${myAge} years old.`;
-
-console.log(profile);
-
-for (let i = 0; i < 10; i++) {
-  var randomNum = Math.random() * 6;
-
-  var result = Math.ceil(randomNum);
-  console.log(result);
+function isLeapYear(n) {
+  var leapYear = false;
+  if ((n % 4 == 0 && n % 100 != 0) || n % 400 == 0) {
+    leapYear = true;
+  }
+  return leapYear;
 }
+
+var result = isLeapYear(2020);
+
+console.log(result);
