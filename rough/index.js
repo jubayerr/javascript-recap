@@ -11,3 +11,12 @@ function isLeapYear(n) {
 var result = isLeapYear(2020);
 
 console.log(result);
+
+function addNum(a, b) {
+  var add = a + b;
+  return add;
+}
+
+var myNum = addNum(50, 30);
+
+console.log(myNum);
