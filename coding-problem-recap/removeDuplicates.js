@@ -1,7 +1,5 @@
 // Remove duplicate item from an array
 
-var nameList = ["jonas", "martha", "mikkel", "jonas"];
-
 function removeDuplicates(item) {
   var realNames = [];
   for (let i = 0; i < item.length; i++) {
@@ -12,6 +10,16 @@ function removeDuplicates(item) {
   }
   return realNames;
 }
+
+var nameList = [
+  "jonas",
+  "martha",
+  "mikkel",
+  "jonas",
+  "mikkel",
+  "bartosz",
+  "martha",
+];
 
 var result = removeDuplicates(nameList);
 
